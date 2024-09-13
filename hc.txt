@@ -1,0 +1,43 @@
+Civil Cases 4264915
+
+
+Criminal Cases 1594834
+
+Total Cases 5859749
+
+Civil Cases More Than 1 Year Old 3205288(75.15%)
+
+Criminal Cases More Than 1 Year Old  1114373(69.87%)
+
+Cases More Than 1 Year Old 4319661(73.72%)
+
+
+ 	         Particulars 	Civil 	            Criminal   	Total
+Pending Cases 	0 to 1 Years 	1059627(24.85%) 480461(30.13%) 	1540088(26.28%)
+Pending Cases 	1 to 3 Years 	710370(16.66%) 	223701(14.03%) 	934071(15.94%)
+Pending Cases 	3 to 5 Years 	567099(13.3%) 	168880(10.59%) 	735979(12.56%)
+Pending Cases 	5 to 10 Years 	997091(23.38%) 	339337(21.28%) 	1336428(22.81%)	
+Pending Cases 	10 to 20 Years 	700071(16.41%) 	310894(19.49%) 	1010965(17.25%)	
+Pending Cases 	20 to 30 Years 	179217(4.1%) 	61279(4.1%) 	240496(4.1%)	
+Pending Cases 	Above 30 Years 	51440 (1.21%) 	10282(0.64%) 	61722(1.05%)	
+Pending Cases 	Total 	        4264915 	1594834 	5859749	
+Case Type Wise 	Writ Petition 	1593482 	76892 	        1670374	
+Case Type Wise 	Second Appeal 	281237          1 	        281238	
+Case Type Wise 	First Appeal 	469295   	253 	        469548	
+Case Type Wise 	Appeal 	        388452 	        663663 	        1052115	
+Case Type Wise 	Case/Petition 	344199 	        189667 	         533866
+Case Type Wise 	Revision 	81623 	        231015 	        312638
+Case Type Wise 	Reference 	3395 	        512 	        3907
+Case Type Wise 	Suit 	        31517 	        24 	        31541
+Case Type Wise 	Review 	        21727 	        25 	        21752
+Case Type Wise 	Application 	439786 	        336259 	        776045
+
+Institution 	Cases Instituted  112024 	80289 	        196829
+                Last Month 		
+Disposal 	Cases Disposed     104179 	71356 	       184421
+                Last Month 		
+SeniorCitizen 	Filed Cases        520940 	151328   	672268
+                By Senior 
+                Citizen 		
+Woman 	        Filed              308426 	   74460 	382886
+                Cases By Woman

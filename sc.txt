@@ -1,0 +1,49 @@
+sc
+Pending Civil Cases 65412
+Pending Criminal Cases 17871
+Pending Cases 83283
+
+										
+																			     													
+Coram wise Pending Cases													
+
+										
+										
+	          Civil		  Criminal	    Total		
+ 3 Judges    157  (966)    60  (154)    217 (1120)
+ 5 Judges    33   (269)    4   (7)      37  (276)
+ 7 Judges    6    (29)     1   (8)      7   (37)
+
+
+
+Coram wise Pending Cases	Civil		  Criminal	    Total																																	
+ 9 Judges                  7 (136)        0 (0)          7(136)
+ 11 Judges                  0 (0)         0(0)           0(0)
+More than 11 Judges         0(0)           0(0)          0(0)
+
+
+
+Instituted in last month
+Instituted in last month civil cases3,660
+Instituted in last month criminal cases1,870
+Instituted in last month total cases5,530
+
+
+Disposed  in last month
+Disposed in last month civil cases 3317 (90.63%)
+Disposeded in last month criminal cases 1755 (93.85%)
+Disposeded in last month total cases 5072 (91.72%)
+								
+								
+							
+									
+							
+								
+Instituted in current year civil cases 27,110
+Instituted in current year criminal cases13,534
+Instituted in current year total cases 40,644
+
+Disposal in current year
+Disposal in current year civil cases 25,050 (92.4%) 	
+Disposal in current year criminal cases 13,314 (98.37%) 	
+Disposal in current year total cases 38,364 (94.39%)

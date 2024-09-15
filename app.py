@@ -1,5 +1,5 @@
 import os
-import streamlit as st
+# import streamlit as st
 from streamlit_chat import message
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 import google.generativeai as genai
@@ -19,9 +19,9 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 
 api_key = os.getenv("GOOGLE_API_KEY")
 
-if not api_key:
-    st.error("GOOGLE_API_KEY not found. Please set it in your .env file or environment variables.")
-    st.stop()
+# if not api_key:
+#     st.error("GOOGLE_API_KEY not found. Please set it in your .env file or environment variables.")
+#     st.stop()
 
 # api_key = "AIzaSyDMhXEiYgLEF6wKrcaWl2nRo30cxFJum_8"
 
@@ -62,7 +62,7 @@ def get_conversational_chain():
         chain = load_qa_chain(llm=model, chain_type="stuff", prompt=prompt)
         return chain
     except Exception as e:
-        st.error(f"Error creating conversational chain: {str(e)}")
+        # st.error(f"Error creating conversational chain: {str(e)}")
         return None
 
 
@@ -83,59 +83,59 @@ def question(question, language):
         else:
             return "Sorry, I'm having trouble generating a response. Please try again later."
     except Exception as e:
-        st.error(f"Error answering question: {str(e)}")
+        # st.error(f"Error answering question: {str(e)}")
         return "I encountered an error while trying to answer your question. Please try again or check your setup."
 
 
 
-def main():
-    st.set_page_config(page_title="Judiciary Assistance System", page_icon="🚜", layout="wide")
+# def main():
+#     # st.set_page_config(page_title="Judiciary Assistance System", page_icon="🚜", layout="wide")
     
-    st.title("🚜 Judiciary Assistance System")
-    st.subheader("Your AI assistant for judiciary information and details")
+#     # st.title("🚜 Judiciary Assistance System")
+#     # st.subheader("Your AI assistant for judiciary information and details")
 
-    # Language selection dropdown
-    languages = {
-        "English": "English",
-        "Hindi": "Hindi",
-        "Hinglish": "Hinglish",
-        "Gujarati": "Gujarati",
-        "Urdu": "Urdu",
-        "Punjabi": "Punjabi"
-    }
-    selected_language = st.selectbox("Select Language", list(languages.keys()), index=0)
+#     # Language selection dropdown
+#     languages = {
+#         "English": "English",
+#         "Hindi": "Hindi",
+#         "Hinglish": "Hinglish",
+#         "Gujarati": "Gujarati",
+#         "Urdu": "Urdu",
+#         "Punjabi": "Punjabi"
+#     }
+#     selected_language = st.selectbox("Select Language", list(languages.keys()), index=0)
 
-    # Initialize chat history
-    if "messages" not in st.session_state:
-        st.session_state.messages = []
+#     # Initialize chat history
+#     if "messages" not in st.session_state:
+#         st.session_state.messages = []
 
-    # Display chat messages from history on app rerun
-    for i, chat in enumerate(st.session_state.messages):
-        message(chat["content"], is_user=chat["is_user"], key=str(i))
+#     # Display chat messages from history on app rerun
+#     for i, chat in enumerate(st.session_state.messages):
+#         message(chat["content"], is_user=chat["is_user"], key=str(i))
 
-    # React to user input
-    if prompt := st.chat_input(f"Ask about judiciary system in {selected_language}:"):
-        # Display user message in chat message container
-        st.chat_message("user").write(prompt)
-        # Add user message to chat history
-        st.session_state.messages.append({"content": prompt, "is_user": True})
+#     # React to user input
+#     if prompt := st.chat_input(f"Ask about judiciary system in {selected_language}:"):
+#         # Display user message in chat message container
+#         st.chat_message("user").write(prompt)
+#         # Add user message to chat history
+#         st.session_state.messages.append({"content": prompt, "is_user": True})
 
-        with st.spinner("Thinking..."):
-            response = ask_question(prompt, languages[selected_language])
+#         with st.spinner("Thinking..."):
+#             response = ask_question(prompt, languages[selected_language])
         
-        # Display assistant response in chat message container
-        with st.chat_message("assistant"):
-            st.write(response)
-        # Add assistant response to chat history
-        st.session_state.messages.append({"content": response, "is_user": False})
+#         # Display assistant response in chat message container
+#         with st.chat_message("assistant"):
+#             st.write(response)
+#         # Add assistant response to chat history
+#         st.session_state.messages.append({"content": response, "is_user": False})
 
-    # Sidebar with additional information
-    with st.sidebar:
-        st.subheader("About")
-        st.write("This AI assistant is designed to help with judiciary system. Feel free to ask any questions about pending cases, judiciary procedures")
+#     # Sidebar with additional information
+#     with st.sidebar:
+#         st.subheader("About")
+#         st.write("This AI assistant is designed to help with judiciary system. Feel free to ask any questions about pending cases, judiciary procedures")
         
-        st.subheader("Need More Help?")
-        st.info("If you need further assistance, consider contacting your local judicial office or the judiciary support line.")
+#         st.subheader("Need More Help?")
+#         st.info("If you need further assistance, consider contacting your local judicial office or the judiciary support line.")
 @app.route('/ask_question', methods=['POST'])
 @cross_origin()
 def ask_question():
@@ -150,5 +150,6 @@ def ask_question():
     return jsonify({"answer": response}), 200
     
 if __name__ == "__main__":
-    main()
+    # main()
     app.run(debug=True, host="0.0.0.0")
+

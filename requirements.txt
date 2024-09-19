@@ -84,4 +84,4 @@ urllib3==2.2.2
 yarl==1.9.4
 flask==3.0.3
 flask_cors==5.0.0
-faiss-cpu==1.8.0
+faiss_cpu==1.8.0
